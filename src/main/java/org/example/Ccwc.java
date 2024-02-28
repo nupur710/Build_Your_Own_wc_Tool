@@ -18,6 +18,16 @@ public class Ccwc {
         return file.length(); //returns length of file in bytes
     }
 
+    /***
+     * no of characters in a file depends on encoding used. If single byte
+     * encoding (like ASCII)- each character is represented by a byte.
+     * No. of characters = No of bytes
+     * In multi-byte encoding (like UTF-8)- each character can be represnted by
+     * different no. of bytes. In UTF-8 encoded files, characters range from 1-4 bytes.
+     * ASCII characters in UTF-8 files are of 1 byte but emoji's, characters from other locales
+     * might be of different no of bytes
+     * @return
+     */
     int countChars() {
         int b= 0;
         int charCount= 0;
