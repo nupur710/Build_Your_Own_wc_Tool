@@ -30,6 +30,8 @@ public class Main {
             case " ":
                 System.out.println(ccwc.countLines() + " " + ccwc.countWords() + " " + ccwc.countBytes() + " " + fileName);
                 break;
+            default:
+                System.out.println("Invalid input");
         }
     }
 
